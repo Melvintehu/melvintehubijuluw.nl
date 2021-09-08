@@ -1,0 +1,16 @@
+@media (min-width: 100px) {
+
+
+    .header--circle--img {
+        img {
+            position: relative;
+        }
+    }
+
+
+    .--debug-screen{
+        @apply bg-yellow-300;
+    }
+
+}
+

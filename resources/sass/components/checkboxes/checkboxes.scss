@@ -1,0 +1,49 @@
+/* Customize the label (the container) */
+.checkbox--container {
+    @apply .flex .items-center .relative .cursor-pointer .text-xs;
+    padding-left: 35px;
+    padding-top: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 24px;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox--container input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox--checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-width: 2px;
+    @apply .rounded .border-hiver-border .bg-white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox--container input:checked ~ .checkbox--checkmark {
+    @apply .border-hiver-border-orange .border-2;
+}
+
+.checkbox--checkmark .icon {
+    @apply .hidden;
+}
+
+.checkbox--container input:checked ~ .checkbox--checkmark .icon {
+    @apply .inline-block;
+}
+
+.checkbox--container input:checked ~ span {
+
+}
+

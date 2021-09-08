@@ -1,0 +1,193 @@
+$color-background: #F5F5F5;
+$color-main: #3C4471;
+$color-active: #FFF;
+$color-link: #FFF;
+
+$button-height: 27px;
+$button-width: 35px;
+
+//.nav-button {
+//  @apply .hover:bg-purple .text-white .transition-normal .rounded .px-4 .py-2;
+//}
+
+@media (min-width: 576px) {
+    .button_container {
+        .sign-up-button {
+            left: 50%;
+            margin-left: -50%;
+        }
+    }
+}
+
+/* place the menu button top right of the screen */
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.button_container {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    height: $button-height;
+    width: $button-width;
+    cursor: pointer;
+    z-index: 2001;
+
+
+    &:hover {
+
+    }
+
+    &.active {
+        .top {
+            transform: translateY(10px) translateX(0) rotate(45deg);
+            background: #FFF;
+        }
+        .middle {
+            opacity: 0;
+            background: #FFF;
+        }
+
+        .bottom {
+            transform: translateY(-10px) translateX(0) rotate(-45deg);
+            background: #FFF;
+        }
+
+        .sign-up-button {
+            background: #FFC128;
+        }
+
+    }
+
+    .sign-up-button {
+        position: absolute;
+        left: -160px;
+        margin-left: 0px;
+        top: -2px;
+    }
+
+    .account-button {
+        position: absolute;
+        left: -200px;
+        margin-left: 0px;
+        top: -2px;
+    }
+
+    span {
+        background: black;
+        border: none;
+        height: 3px;
+        width: $button-width;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .35s ease;
+        cursor: pointer;
+
+        &:nth-of-type(2) {
+            top: 10px;
+        }
+
+        &:nth-of-type(3) {
+            top: 20px;
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    background: $color-main;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: scroll;
+    z-index: 2000;
+    &.open {
+        opacity: .95;
+        visibility: visible;
+        height: 100%;
+
+        li {
+            animation: fadeInRight .5s ease forwards;
+            animation-delay: .35s;
+
+            &:nth-of-type(2) {
+                animation-delay: .4s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: .45s;
+            }
+            &:nth-of-type(4) {
+                animation-delay: .50s;
+            }
+        }
+    }
+    nav {
+        position: relative;
+        height: 70%;
+        top: 50%;
+        transform: translateY(-50%);
+        //text-align: center;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+
+        li {
+            display: block;
+            height: 10%;
+            height: calc(100% / 8);
+            min-height: 50px;
+            position: relative;
+            opacity: 0;
+
+            a {
+                font-family: 'Montserrat', sans-serif;
+                display: block;
+                position: relative;
+                color: $color-link;
+                text-decoration: none;
+                overflow: hidden;
+                font-size: 20px;
+                &:hover:after,
+                &:focus:after,
+                &:active:after {
+                    width: 100%;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0%;
+                    transform: translateX(-50%);
+                    height: 3px;
+
+                    transition: .35s;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}

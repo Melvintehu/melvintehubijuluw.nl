@@ -1,0 +1,17 @@
+@media (min-width: 1280px) {
+    .--debug-screen {
+        @apply bg-gray-300;
+    }
+
+
+    .header--circle--img {
+        top: -50px;
+        left: -170px;
+        img {
+            position: relative;
+            right: 50px;
+        }
+    }
+}
+
+
