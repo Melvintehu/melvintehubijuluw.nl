@@ -26,15 +26,15 @@
                         @endcomponent
 
                         @component('components.skill')
-                            @slot('title') Databases @endslot
+                            @slot('title') Design @endslot
                             @slot('date') 2013 @endslot
-                            @slot('subSkills') MySQL, Algolia @endslot
+                            @slot('subSkills') Adobe Illustrator (2013-2017), Adobe Xd (2017) @endslot
                         @endcomponent
 
                         @component('components.skill')
-                            @slot('title') HTML, CSS @endslot
+                            @slot('title') Databases @endslot
                             @slot('date') 2013 @endslot
-                            @slot('subSkills') HTML5, CSS3, Sass, TailwindCss, blade @endslot
+                            @slot('subSkills') MySQL, Algolia @endslot
                         @endcomponent
 
                         @component('components.skill')
@@ -64,10 +64,9 @@
 
                         @component('components.skill')
                             @slot('title') Unity3d @endslot
-                            @slot('date') 2013 @endslot
+                            @slot('date') 2019 @endslot
                             @slot('subSkills') C# programming, basic game programming @endslot
                         @endcomponent
-
 
                     </div>
                 </div>
