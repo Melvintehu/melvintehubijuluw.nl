@@ -1,12 +1,10 @@
-<div id="about-me" class="container py-32 ">
+t<div id="about-me" class="container py-32 ">
     <h2 class="text-5xl font-bold mb-12">About me</h2>
     <p class="text-gray-600 text-base mb-20 w-full lg:w-2/3 leading-loose">
         I am Melvin Tehubijuluw and I am {{ date_diff(date_create($bdate = '12-02-1992'), date_create('now'))->y }} years old.
-
-        <br><br>
-        I could tell you all kinds of stories about myself, but if you really want to get to know me,
-        <a class="text-purple-600 font-bold" target="_blank" href="https://www.linkedin.com/in/melvin-t-1b8427107/"> then we should meet.</a>
-        Maybe with a nice cup of coffee or a cold beer. To give you a small impression, here's a summary about me.
+        I could tell you all kinds of stuff here, but let's
+        <a class="text-purple-600 font-bold" target="_blank" href="https://www.linkedin.com/in/melvin-t-1b8427107/"> meet.</a>
+        A cup of coffee or a cold beer would sure be nice, to get to know each other. To give you a small impression, here's a summary about me.
     </p>
 
     <div class="flex">
@@ -34,6 +32,15 @@
                 @slot('positiveTraits')
                     Soccer, running, <a class="text-purple-600 font-bold" target="_blank" href="https://www.khanacademy.org/profile/Melvintehu/">math</a>,
                     watch movies, play music, play games and meet with friends
+                @endslot
+            @endcomponent
+
+            @component('components.trait')
+                @slot('title') Things that make me unhappy @endslot
+                @slot('positiveTraits')
+                    only fixing bugs, "just do your job, we do the thinking",
+                    no appriciation for the work done,
+                    planning impossible deadlines.
                 @endslot
             @endcomponent
 

@@ -6,9 +6,13 @@
 
 
     <div class="flex ">
-        <span class="mr-8 text-green-500">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        </span>
+        @if(!isset($icon))
+            <span class="mr-8 text-green-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+        @else
+            {{ $icon  }}
+        @endif
         <p class="text-gray-600 text-sm leading-loose">
             {{ $positiveTraits }}
         </p>
