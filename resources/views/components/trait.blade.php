@@ -1,6 +1,6 @@
 <div class="">
 
-    <p class="text-2xl leading-none font-bold mb-6">
+    <p class="text-2xl leading-normal font-bold mb-6">
         {{ $title }}
     </p>
 
