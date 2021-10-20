@@ -12,7 +12,7 @@
         </div>
 
         <div class="portfolio-main-image rounded-default h-168 overflow-hidden mb-4">
-            <img src="{{ $image1 }}" />
+            <img loading=lazy src="{{ $image1 }}" />
         </div>
     </div>
 </div>
@@ -20,10 +20,10 @@
 <div class="container mx-auto py-32">
     <div class="grid grid-cols-2 gap-4 mb-12">
         <div class="rounded-default h-96 overflow-hidden">
-            <img src="{{ $image2 }}" />
+            <img loading=lazy src="{{ $image2 }}" />
         </div>
         <div class="rounded-default h-96 overflow-hidden">
-            <img src="{{ $image3 }}" />
+            <img loading=lazy src="{{ $image3 }}" />
         </div>
     </div>
 
