@@ -1,8 +1,8 @@
 
 @component('components.portfolio.item', [
-    'image1' => '/img/portfolio/certscanner/certscanner-1.png',
-    'image2' => '/img/portfolio/certscanner/certscanner-2.png',
-    'image3' => '/img/portfolio/certscanner/certscanner-3.png',
+    'image1' => '/img/portfolio/certscanner/certscanner-1-min.png',
+    'image2' => '/img/portfolio/certscanner/certscanner-2-min.png',
+    'image3' => '/img/portfolio/certscanner/certscanner-3-min.png',
     'backgroundColor' => 'bg-cert-purple',
     'techniques' => [
         'Laravel 7, Laravel Nova, PHPUnit',
@@ -25,9 +25,9 @@
 
 
 @component('components.portfolio.item', [
-    'image1' => '/img/portfolio/enpron/enpron-1.png',
-    'image2' => '/img/portfolio/enpron/enpron-2.png',
-    'image3' => '/img/portfolio/enpron/enpron-3.png',
+    'image1' => '/img/portfolio/enpron/enpron-1-min.png',
+    'image2' => '/img/portfolio/enpron/enpron-2-min.png',
+    'image3' => '/img/portfolio/enpron/enpron-3-min.png',
     'backgroundColor' => 'bg-enpron-purple',
     'techniques' => [
         'Adobe Xd',
@@ -49,9 +49,9 @@
 
 
 @component('components.portfolio.item', [
-    'image1' => '/img/portfolio/ftd/ftd-1.png',
-    'image2' => '/img/portfolio/ftd/ftd-2.png',
-    'image3' => '/img/portfolio/ftd/ftd-3.png',
+    'image1' => '/img/portfolio/ftd/ftd-1-min.png',
+    'image2' => '/img/portfolio/ftd/ftd-2-min.png',
+    'image3' => '/img/portfolio/ftd/ftd-3-min.png',
     'backgroundColor' => 'bg-ftd-orange',
     'techniques' => [
         'Laravel 6, Laravel Nova, PHPUnit',
