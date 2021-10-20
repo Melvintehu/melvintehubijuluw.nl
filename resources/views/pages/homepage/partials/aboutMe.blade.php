@@ -1,4 +1,4 @@
-t<div id="about-me" class="container py-32 ">
+<div id="about-me" class="container py-32 ">
     <h2 class="text-5xl font-bold mb-12">About me</h2>
     <p class="text-gray-600 text-base mb-20 w-full lg:w-2/3 leading-loose">
         I am Melvin Tehubijuluw and I am {{ date_diff(date_create($bdate = '12-02-1992'), date_create('now'))->y }} years old.
@@ -36,7 +36,7 @@ t<div id="about-me" class="container py-32 ">
             @endcomponent
 
             @component('components.trait')
-                @slot('title') Things that make me unhappy @endslot
+                @slot('title') Things making me unhappy @endslot
                 @slot('positiveTraits')
                     only fixing bugs, "just do your job, we do the thinking",
                     no appriciation for the work done,

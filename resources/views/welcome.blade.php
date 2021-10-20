@@ -21,5 +21,6 @@
         @include('pages.homepage.partials.header')
         @include('pages.homepage.partials.briefSummaryOfSkills')
         @include('pages.homepage.partials.aboutMe')
+        @include('pages.homepage.partials.portfolio')
     </body>
 </html>

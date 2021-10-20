@@ -29,6 +29,19 @@ module.exports = {
                 'purple' : '#805AD5',
                 'light-blue' : '#FAF5FF',
                 'blue' : '#E9D8FD',
+                'gray' : '#ECECEC',
+            },
+
+            "cert": {
+                'purple' : '#091E42',
+            },
+
+            "enpron": {
+                'purple' : '#661FFF',
+            },
+
+            "ftd": {
+                'orange' : '#DB7F50',
             },
 
             // end of project colors

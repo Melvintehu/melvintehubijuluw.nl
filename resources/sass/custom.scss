@@ -7,10 +7,16 @@
         }
     }
 
+    .portfolio-main-image {
+        position: relative;
+        top: 128px;
+    }
+
 
     .--debug-screen{
         @apply bg-yellow-300;
     }
+
 
 }
 
