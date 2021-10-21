@@ -14,6 +14,7 @@ module.exports = {
 
             'opacity-black-30': 'rgba(0, 0, 0, .3)',
             'opacity-black-40': 'rgba(0, 0, 0, .4)',
+            'opacity-black-70': 'rgba(0, 0, 0, .7)',
             'opacity-white-50': 'rgba(255, 255, 255, .50)',
             'opacity-white-95': 'rgba(255, 255, 255, .95)',
             'opacity-background-50': 'rgba(244, 245, 247, .50)',

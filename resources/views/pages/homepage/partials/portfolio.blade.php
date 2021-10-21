@@ -9,6 +9,7 @@
         'Vue 2, Vuex, Renderless components, Mixins',
         'TailwindCss',
     ],
+    'href' => 'https://certscanner.com'
 ])
     @slot('projectName') certscanner.com @endslot
     @slot('shortDescription') Offshore certification made easy @endslot
@@ -32,6 +33,7 @@
     'techniques' => [
         'Adobe Xd',
     ],
+    'href' => '/files/enpron.pdf'
 ])
     @slot('projectName') ENPRON @endslot
     @slot('shortDescription') B2B energie saving. @endslot
@@ -58,6 +60,7 @@
         'Mollie API-integration',
         'TailwindCss',
     ],
+    'href' => 'https://fietstegendiabetes.nl'
 ])
     @slot('projectName') Fietstegendiabetes.nl @endslot
     @slot('shortDescription') A charity that funds medical breaktroughs for diabetics. @endslot
