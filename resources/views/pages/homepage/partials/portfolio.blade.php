@@ -71,10 +71,10 @@
 
     @slot('description')
         Fietstegendiabetes.nl is a charity that tries to raise money for medical
-        breaktroughs for Diabetes type 1. this year we managed to raise almost
+        breaktroughs regarding Diabetes type 1. This year we managed to raise almost
         €40.000.
         <br><br>
-        This design wouldn't have worked with the help of <a class="text-ftd-orange font-bold" target="_blank" href="https://www.linkedin.com/in/myrtheengeltjes/" >Myrthe Engeltjes</a> who has
+        This design wouldn't have worked with the help of <a class="text-ftd-orange font-bold" target="_blank" href="https://www.linkedin.com/in/myrtheengeltjes/" >Myrthe Engeltjes</a>. Who has
         created all the illustrations you see in the mockups.
     @endslot
 @endcomponent
