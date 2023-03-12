@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -77,7 +77,7 @@
 
     <!-- Wave pattern on mobile devices   -->
     <div class="absolute bottom-0 w-full  lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 360 153">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%"  viewBox="0 0 360 153">
             <path id="wave" d="M0,96l10,7.308c10,7.035,30,22.062,50,18.169C80,117.857,100,96,120,99.62c20,3.893,40,32.581,60,32.786,20-.2,40-28.892,60-18.169,20,11.133,40,61.678,60,76.5,20,14.549,40-7.309,50-18.237l10-10.929V249H0Z" transform="translate(0 -96)" fill="#19142a"/>
         </svg>
     </div>
@@ -397,7 +397,19 @@
     </div>
 </section>
 
+<script>
 
+    document.addEventListener("DOMContentLoaded", function() {
+        // if (navigator.userAgent.indexOf("SamsungBrowser") > -1) {
+            const addressBarHeight = document.documentElement.clientHeight - window.innerHeight;
+
+            const customHeaderTitlesPositionClass = document.querySelector('.custom-header-titles-position');
+            const currentRelativeBottomPosition = parseFloat(getComputedStyle(customHeaderTitlesPositionClass).bottom);
+
+            customHeaderTitlesPositionClass.style.bottom = `${addressBarHeight + currentRelativeBottomPosition}px`;
+        // }
+    });
+</script>
 </body>
 </html>
 
